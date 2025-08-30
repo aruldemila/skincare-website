@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <h1>🦋Beauty</h1>
+    <ul>
+    <li><a href="index.html">Home </a></li>
+    <li><a href="abouts.html">About </a></li>
+    <li><a href="service.html">Service </a></li>
+    <li><a href="contact.html">Contact </a></li>  
+    </ul>
+    <button id="btn">Make An Appointment</button>
+    </nav>
+    <div id="style">
+    <form>
+        <center>
+        <h2 style="padding: 30px; font-size: 50px;">Make An Appointment</h2>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; padding: 25px;">skincare is the practice of maintaining and improving the health and appearance of the skin. It includes 
+            washing, moisturizing, protecting from the sun, and treating skin problems like acne and dryness.
+             Skin care can help prevent infections and irritation and is an important part of daily hygiene.</p>
+        <input type="text" id="name" placeholder="Enter Your Name" > 
+         <input type="email" id="mail" placeholder="Enter Your Email"> 
+         <input type="number" id="num" placeholder="Your Number"><br><br><br>
+        <input type="date" id="day" placeholder="Appointment Date"> 
+        <select id="age">
+            <option value="">Select Age</option>
+            <option value="1-18">Below 18</option>
+            <option value="18-40">18-40</option>
+            <option value="41-100">40 above</option>
+        </select>
+        <select id="doctor">
+            <option value="">Select Service</option>
+            <option value="1">Anti-aging Therapy</option>
+            <option value="2">Skin whitening Therapy</option>
+            <option value="3">Hydra Facial</option>
+            <option value="4">Botox & Filler</option>
+            <option value="4">Chemical Peel</option>
+        </select><br><br>
+         </center>
+        <textarea name="area" id="area" rows="10" cols="100" style="margin-left: 20%;"placeholder="Message(optional)"></textarea><br><br>
+        <center><button id="btn1">Make An Appointment</button></center>
+       
+    </form>
+    </div>
+    <script>
+        document.getElementById("style").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let username = document.getElementById("name").value;
+            let feed = document.getElementById("area").value;
+
+            if (username === "" || feed === "") {
+                alert("Please Fill the Details");
+            } else {
+                document.getElementById("btn1").textContent = 
+                alert("Thank you, " + username + "😊");    
+            }
+        });
+        
+        
+        //    
+    </script>
+
+    
+
+</body>
+</html>

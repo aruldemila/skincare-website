@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <style>
+            #demo{
+                width: 500px;
+                padding: 70px;
+                position: absolute;
+            }
+            #style{
+                background-color:beige;
+                padding: 40px;
+                margin-left: 750px;
+                box-sizing: border-box;
+                box-shadow:  0 0 10px rgba(0, 1, 2, 0.5);
+                border-radius: 20px;
+                width: 600px;
+            }
+            
+            #name, #mail, #number{
+                width: 250px;
+                height: 30px;
+            }
+            #but{
+                width: 200px;
+                color: black;
+            }
+            #but:hover{
+                color: white;
+            }
+        </style>
+</head>
+<body>
+    <nav>
+    <h1>🦋Beauty</h1>
+    <ul>
+    <li><a href="index.html">Home </a></li>
+    <li><a href="abouts.html">About </a></li>
+    <li><a href="service.html">Service </a></li>
+    <li><a href="contact.html">Contact </a></li>  
+    </ul>
+    <button><a href="appointment.html">Make An Appointment </a></button>
+    </nav>
+
+    </div>
+    <div id="demo">
+        <h2>Contact Us</h2><br>
+        <p>Let us know your queries, feedbacks and enquiries. We are here to support you 24/7.</p><br>
+        <hr><br>
+        <h3>☎️Give us a Call</h3><br>
+        <p>7010701295</p><br>
+        <hr><br>
+        <h3>📧Write to Us</h3><br>
+        <p>Email: beauty@love.org</p><br>
+        <hr><br>
+        <h3>📍visit us in chennai</h3><br>
+        <p>66, Josier St, Tirumurthy Nagar, Nungambakkam, Chennai, Tamil Nadu 600034</p><br>
+        <hr>
+    </div>
+    <div id="style">
+        <form>
+        <h3>Say Hello!</h3>
+        <p>Feel free to stop by and say hi !</p>
+        Name:<br><br>
+        <input type="name" id="name" placeholder="Enter Your Name"/><br><br> 
+        Email:<br><br>
+        <input type="email" id="mail" placeholder="Enter Your Email"/><br><br>
+        Mobile Number:<br><br>
+        <input type="number" id="number" placeholder="Enter Your Number"/><br><br>
+        How can I Help:<br><br>
+        <textarea id="area" rows="5" cols="31" placeholder="Type your Message here...."></textarea><br><br>
+        <button id="but">Send</button>
+        <br></br>
+        <p id="result" style="color: rgb(101, 123, 248); font-size: larger;"></p>
+       </form>  
+    </div>
+    <script>
+        document.getElementById("style").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let username = document.getElementById("name").value;
+            let feed = document.getElementById("area").value;
+
+            if (username === "" || feed === "") {
+                alert("Please Fill the Details");
+            } else {
+                document.getElementById("result").textContent = 
+                    "Thank you, " + username + "😊! Sucessfully Sending your Messages";
+            }
+        });
+    </script>
+</body>
+</html>

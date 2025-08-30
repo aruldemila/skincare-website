@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+
+background: linear-gradient(135deg,#b3d8f7,#67b9fc,#3ba1f5);
+color: darkblue;
+padding: 15px;
+}
+ul,h1,li{
+     display: inline;
+}
+ul{
+    margin-left: 60%;
+}
+a{
+    margin: 4px;
+    color: black;
+    text-decoration: none;
+}
+button{
+    background: linear-gradient(135deg,#bab3f7,#67b9fc);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 30px;
+    border: none;
+}
+button:hover{
+   background: linear-gradient(135deg,#d98af1,#3fa8fd);
+}
+a:hover{
+    color: linen;
+}
+#name,#mail,#num,#day,#age,#doctor{
+    width: 300px;
+    height: 35px;
+}
+#b1,#b2,#b3,#b4,#b5{
+            margin-top: 120px;
+            width: 250px;
+            color: white;
+}
